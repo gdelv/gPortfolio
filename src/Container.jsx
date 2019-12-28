@@ -1,9 +1,12 @@
 import React from 'react'
+import CarouselPage from './CarouselPage'
 
 const Container = ()=> {
     return (
         <div>
-            <div>Intro Section</div>
+            <div className='carousel-container'>            
+                <CarouselPage/>
+            </div>
             <div>About Section</div>
             <div>Timeline Section</div>
 
