@@ -1,12 +1,13 @@
 import React from "react";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from 'react-icons/ai'
+const profilePic  = require('./images/Gheadshot.jpeg')
 const Nav = () => {
   return (
     <div className="nav-container">
 
       <div className="profile-pic-container">
-        <img src="https://media.licdn.com/dms/image/C4E03AQH70rtO8aVBtQ/profile-displayphoto-shrink_800_800/0?e=1582761600&v=beta&t=G88XeQekYaAIjfxNd2K_6SYBeqwa84zk534p2X3Zf14" />
+        <img src={profilePic} />
       </div>
 
       <h1>
@@ -15,7 +16,7 @@ const Nav = () => {
       </h1>
 
       <h6>
-          <AiOutlineMail style={{paddingRight:'1em'}}/>giudelvecchio@gmail.com
+          <AiOutlineMail style={{paddingRight:'.5em'}}/>giudelvecchio@gmail.com
     </h6>
 
       <div className='links-container'>

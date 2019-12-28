@@ -4,13 +4,21 @@
   /* height: 100%; */
   /* width: 100%; */
 }
+
+.profile-pic-container {
+/* border: 2px solid black; */
+display: flex;
+align-content: center;
+margin: 3em;   
+flex-direction: column;
+}
 .profile-pic-container img {
-  position: relative;
-  left: 10%;
+  /* position: relative; */
+  /* left: 10%; */
   height: 15em;
   border-radius: 10em;
-  margin-top: 10%;
-  border: 2px solid red;
+  /* margin-top: 10%; */
+  /* border: 2px solid red; */
 }
 
 .nav-container {
@@ -18,11 +26,18 @@
   height: 100vh;
   border: 2px solid green
 }
+
+/* logo name properties */
 .nav-container h1 {
   text-align: center;
+  font-family: "Inria Serif";
+  font-size: 3em;
 }
 
+/* email properties */
 .nav-container h6 {
+  font-size: 1.3em;
+  font-family: "Inria Serif";
   text-align: center;
 }
 
