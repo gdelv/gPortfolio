@@ -20,19 +20,19 @@ const Nav = () => {
     </h6>
 
       <div className='links-container'>
-        <a href="#"> Intro</a>
+        <a href="/"> Intro</a>
         <a href="#"> About</a>
         <a href="#"> Timeline</a>
       </div>
 
       <div className='socialmedia-links-container'>
-        <a href="https://www.linkedin.com/in/giusseppe-del-vecchio/">
+        <a href="https://www.linkedin.com/in/giusseppe-del-vecchio/" target='_blank'>
           <FaLinkedin />
         </a>
-        <a href="https://www.instagram.com/gdelvec/">
+        <a href="https://www.instagram.com/gdelvec/" target='_blank'>
           <FaInstagram />
         </a>
-        <a href="https://github.com/gdelv">
+        <a href="https://github.com/gdelv" target='_blank'>
           <FaGithub />
         </a>
       </div>

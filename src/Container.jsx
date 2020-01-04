@@ -7,7 +7,11 @@ const Container = ()=> {
             <div className='carousel-container'>            
                 <CarouselPage/>
             </div>
-            <div>About Section</div>
+            <div>
+                <h6>About me</h6>
+                <h4>Who is Giusseppe Del Vecchio?</h4>
+                <p></p>
+            </div>
             <div>Timeline Section</div>
 
         </div>
