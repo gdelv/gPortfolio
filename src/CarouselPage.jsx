@@ -2,6 +2,9 @@ import React from "react";
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
 "mdbreact";
 
+const machupicchu = require('./images/machupicchu.jpg')
+const codingPic = require('./images/coding.jpg')
+
 const CarouselPage = () => {
   return (
     <MDBContainer>
@@ -17,7 +20,7 @@ const CarouselPage = () => {
           <MDBView>
             <img
               className="d-block"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+              src={machupicchu}
               alt="First slide"
             />
           <MDBMask overlay="black-light" />
@@ -25,14 +28,17 @@ const CarouselPage = () => {
           <MDBCarouselCaption>
             <h3 className="h3-responsive">Hi I'm Giusseppe</h3>
             <p>Check out my CV!</p>
-            <button>View CV</button>
+            <form action = "https://docs.google.com/document/d/1Sfa1oG-s_jS2hRsCWz7vPVLQyNqB38fRRaiAlvXJSqY/edit?usp=sharing" target='_blank'>
+              <button type="submit">View CV</button>
+            </form>
+            
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="2">
           <MDBView>
             <img
               className="d-block"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+              src={codingPic}
               alt="Second slide"
             />
           <MDBMask overlay="black-strong" />
