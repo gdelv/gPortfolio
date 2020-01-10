@@ -247,4 +247,8 @@ justify-content: center;
     padding: 0;
     /* margin: 0 auto; */
   }
+  .socialmedia-links-container {
+    flex-direction: row;
+    margin: 1em 0;
+  }
 }
