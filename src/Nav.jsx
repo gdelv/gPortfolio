@@ -22,7 +22,7 @@ const Nav = () => {
       <div className='links-container'>
         <a href="/"> Intro</a>
         <a href="#"> About</a>
-        <a href="#"> Timeline</a>
+        <a href="#"> Projects</a>
       </div>
 
       <div className='socialmedia-links-container'>

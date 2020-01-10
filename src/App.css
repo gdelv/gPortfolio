@@ -1,3 +1,8 @@
+body {
+  /* white for light mode and black for dark mode */
+  background-color: white;
+}
+
 .main-container {
   display: flex;
   flex-direction: row;
@@ -99,6 +104,8 @@ justify-content: center;
   z-index: 2;
   width: 100%;
   height: 100vh;
+  opacity: .8;
+  /* filter: blur(.5px); */
  } 
 
 .carousel-inner .active {
@@ -111,21 +118,66 @@ justify-content: center;
   border-radius: 5em;
 }
 
-.about-description {
-  position: relative;
-  left: 10%;
+.about {
+  border: 2px solid black;
+  margin: 2em;
+  padding: .5em;
+  background-color: rgba(205, 134, 63, 0.384);
 }
+.languages-container {
+  /* border: 2px solid green; */
+  display: flex; 
+  height: fit-content;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+.language-logo-container {
+  text-align: center;
+  padding-right: 5em;
+  padding-left: 5em;
+  font-weight: 500;
+}
+
+.about{
+  /* black for light mode white for dark mode */
+  color: black;
+  font-family: "Inria Serif";
+  font-size: 1.3em;
+
+}
+
+.project {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  padding: 2em;
+}
+.tech-container {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0em 8em;
+  text-align: center;
+}
+
+.tech-button-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 5em;
+  /* margin: 1em; */
+}
+
 .view .mask {
   width: 100%;
   background-color: lightgray;
   z-index: 1;
 }
 
-
-.view {
-  /* width: 80%; */
-  /* margin: 0 auto; */
-}
 
 @media (max-width: 1000px) {
   .main-container {
