@@ -47,7 +47,10 @@ const CarouselPage = () => {
             <h3 className="h3-responsive">I enjoy creating new projects</h3>
             <p>"The best project you'll ever work on is you"</p>
             <p>Check out some of my recent projects</p>
-            <button className='carousel-buttons'>View Projects</button>
+            <form action='#projects'>
+            <button type='submit' className='carousel-buttons'>View Projects</button>
+
+            </form>
           </MDBCarouselCaption>
         </MDBCarouselItem>
       </MDBCarouselInner>

@@ -5,7 +5,7 @@ import Projects from './Projects'
 const About = () => {
     return (
         <>
-            <div className='about'>
+            <div className='about' id='about'>
                 <h2>About me</h2>
                 {/* insert typewriter effect here for different nicknames */}
                 <h4>Who is Giusseppe Del Vecchio?</h4>

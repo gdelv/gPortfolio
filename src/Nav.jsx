@@ -21,8 +21,8 @@ const Nav = () => {
 
       <div className='links-container'>
         <a href="/"> Intro</a>
-        <a href="#"> About</a>
-        <a href="#"> Projects</a>
+        <a href="#about"> About</a>
+        <a href="#projects"> Projects</a>
       </div>
 
       <div className='socialmedia-links-container'>
