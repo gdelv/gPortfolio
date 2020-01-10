@@ -10,7 +10,7 @@ const CarouselPage = () => {
     <MDBContainer>
       <MDBCarousel
       activeItem={1}
-      length={2} //change back to 2 when finished CSS for CarouselSlide
+      length={2} 
       showControls={false}
       showIndicators={true}
       className="z-depth-1"
@@ -50,20 +50,6 @@ const CarouselPage = () => {
             <button className='carousel-buttons'>View Projects</button>
           </MDBCarouselCaption>
         </MDBCarouselItem>
-        {/* <MDBCarouselItem itemId="3">
-          <MDBView>
-            <img
-              className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-              alt="Third slide"
-            />
-          <MDBMask overlay="black-slight" />
-          </MDBView>
-          <MDBCarouselCaption>
-            <h3 className="h3-responsive">Slight Mast</h3>
-            <p>Third text</p>
-          </MDBCarouselCaption>
-        </MDBCarouselItem> */}
       </MDBCarouselInner>
     </MDBCarousel>
     </MDBContainer>
