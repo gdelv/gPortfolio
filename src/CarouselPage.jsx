@@ -29,7 +29,7 @@ const CarouselPage = () => {
             <h3 className="h3-responsive">Hi I'm Giusseppe</h3>
             <p>Check out my CV!</p>
             <form action = "https://docs.google.com/document/d/1Sfa1oG-s_jS2hRsCWz7vPVLQyNqB38fRRaiAlvXJSqY/edit?usp=sharing" target='_blank'>
-              <button type="submit">View CV</button>
+              <button type="submit" className='carousel-buttons'>View CV</button>
             </form>
             
           </MDBCarouselCaption>
@@ -45,8 +45,9 @@ const CarouselPage = () => {
           </MDBView>
           <MDBCarouselCaption>
             <h3 className="h3-responsive">I enjoy creating new projects</h3>
+            <p>"The best project you'll ever work on is you"</p>
             <p>Check out some of my recent projects</p>
-            <button>View Projects</button>
+            <button className='carousel-buttons'>View Projects</button>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         {/* <MDBCarouselItem itemId="3">
