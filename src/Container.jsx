@@ -4,7 +4,7 @@ import About from "./About";
 
 const Container = () => {
   return (
-     <div className="carousel-container">
+     <div className="carousel-container" id='carousel'>
         <CarouselPage />
           <About/>
       </div>

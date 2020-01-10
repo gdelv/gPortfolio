@@ -16,24 +16,24 @@ const Nav = () => {
       </h1>
 
       <h6>
-          <AiOutlineMail style={{paddingRight:'.5em'}}/>giudelvecchio@gmail.com
+          <AiOutlineMail size={50} style={{paddingRight:'.5em'}}/>giudelvecchio@gmail.com
     </h6>
 
       <div className='links-container'>
-        <a href="/"> Intro</a>
+        <a href="#carousel"> Intro</a>
         <a href="#about"> About</a>
         <a href="#projects"> Projects</a>
       </div>
 
       <div className='socialmedia-links-container'>
         <a href="https://www.linkedin.com/in/giusseppe-del-vecchio/" target='_blank'>
-          <FaLinkedin />
+          <FaLinkedin size={40}/>
         </a>
         <a href="https://www.instagram.com/gdelvec/" target='_blank'>
-          <FaInstagram />
+          <FaInstagram size={40}/>
         </a>
         <a href="https://github.com/gdelv" target='_blank'>
-          <FaGithub />
+          <FaGithub size={40}/>
         </a>
       </div>
       <p className='footer'>Made with &hearts;</p>

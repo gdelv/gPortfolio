@@ -60,7 +60,7 @@ const Projects = () => {
                 return (
                     <div className='project'>
                         <img src={project.img} />
-                        <h3>{project.title}</h3>
+                        <h4>{project.title}</h4>
                         <p>{project.description}</p>
                         <div className='tech-button-container'>
                             <form action={project.webLink} target='_blank'>
