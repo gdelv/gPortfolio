@@ -27,16 +27,16 @@ const Nav = () => {
 
       <div className='socialmedia-links-container'>
         <a href="https://www.linkedin.com/in/giusseppe-del-vecchio/" target='_blank'>
-          <FaLinkedin size={40}/>
+          <FaLinkedin size={40} style={{color: '#FCFCD4'}}/>
         </a>
         <a href="https://www.instagram.com/gdelvec/" target='_blank'>
-          <FaInstagram size={40}/>
+          <FaInstagram size={40} style={{color: '#FCFCD4'}}/>
         </a>
         <a href="https://github.com/gdelv" target='_blank'>
-          <FaGithub size={40}/>
+          <FaGithub size={40} style={{color: '#FCFCD4'}}/>
         </a>
       </div>
-      <p className='footer'>Made with &hearts;</p>
+      <p className='footer'>Made with <span id='heart'>&hearts;</span></p>
     </div>
   );
 };

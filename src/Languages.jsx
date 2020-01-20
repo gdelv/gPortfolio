@@ -6,10 +6,6 @@ import { DiJavascript, DiRuby, DiPostgresql } from "react-icons/di";
 const Languages = () => {
     const languages = [
         {
-            name: 'GitHub',
-            logo: <FaGithub size='3em' />
-        },
-        {
             name:'HTML',
             logo: <FaHtml5 size='3em'/>
         },
@@ -20,6 +16,10 @@ const Languages = () => {
         {
             name: 'JavaScript',
             logo: <DiJavascript size='3em' />
+        },
+        {
+            name: 'GitHub',
+            logo: <FaGithub size='3em' />   
         },
         {
             name: 'Node.js',
@@ -41,9 +41,10 @@ const Languages = () => {
 
     ]
     return (
-        <>  <h4>Languages:</h4>
+        <>  
+            <div className='languages'>
+            <h4>Languages:</h4>
             <div className='languages-container'>
-
                 {languages.map(language => {
                     return (
                         <div className='language-logo-container'>
@@ -52,6 +53,8 @@ const Languages = () => {
                         </div>
                     )
                 })}
+                </div>
+                
             </div>
         </>
     )

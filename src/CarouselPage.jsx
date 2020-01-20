@@ -1,6 +1,8 @@
 import React from "react";
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
 "mdbreact";
+const Render = require('react-emoji-render')
+const Emoji = Render.Twemoji
 
 const machupicchu = require('./images/machupicchu.jpg')
 const codingPic = require('./images/coding.jpg')
@@ -11,6 +13,7 @@ const CarouselPage = () => {
       <MDBCarousel
       activeItem={1}
       length={2} 
+      interval={false}
       showControls={false}
       showIndicators={true}
       className="z-depth-1"
@@ -25,8 +28,10 @@ const CarouselPage = () => {
             />
           <MDBMask overlay="black-light" />
           </MDBView>
-          <MDBCarouselCaption>
-            <h3 className="h3-responsive">Hi I'm Giusseppe</h3>
+          <MDBCarouselCaption className='first-caption' id='first-caption'>
+            <h3 className="h3-responsive">{React.createElement(Emoji, {
+              text: "Hello there! :waving_hand:"
+            })}</h3>
             <p>Check out my CV!</p>
             <form action = "https://docs.google.com/document/d/1Sfa1oG-s_jS2hRsCWz7vPVLQyNqB38fRRaiAlvXJSqY/edit?usp=sharing" target='_blank'>
               <button type="submit" className='carousel-buttons'>View CV</button>
@@ -43,9 +48,9 @@ const CarouselPage = () => {
             />
           <MDBMask overlay="black-strong" />
           </MDBView>
-          <MDBCarouselCaption>
-            <h3 className="h3-responsive">I enjoy creating new projects</h3>
-            <p>"The best project you'll ever work on is you"</p>
+          <MDBCarouselCaption className='second-caption'>
+            <h3>I enjoy creating new projects</h3>
+            {/* <p>"The best project you'll ever work on is you"</p> */}
             <p>Check out some of my recent projects</p>
             <form action='#projects'>
             <button type='submit' className='carousel-buttons'>View Projects</button>

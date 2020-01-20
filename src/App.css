@@ -35,9 +35,11 @@ margin: 2em;
   z-index: 100;
   height: 100vh;
   /* nav border */
-  /* border: 2px solid green; */      
-  background-color: peru;
+  /* border: 2px solid green; */
+  border-right: 1px solid white;      
+  background-color: #005AA4;
   /* position: sticky; */
+  color: #FCFCD4;
 }
 
 /* logo name properties */
@@ -64,11 +66,13 @@ margin: 2em;
   padding-bottom: .25em;
   margin: 0 auto;
   font-size: 1.5em;
+  color: #FCFCD4;
 }
 
 .socialmedia-links-container {
 display: flex;
-flex-direction: column;
+flex-direction: row-reverse;
+margin: 2em ;
 
 }
 .socialmedia-links-container a {
@@ -80,6 +84,10 @@ flex-direction: column;
 display: flex;
 justify-content: center;
 }
+#heart {
+  color: red;
+  padding-left: .5em;
+}
 
 /* carouselPage */
 .container {
@@ -90,12 +98,43 @@ justify-content: center;
   /* border: 5px solid green; */
   width: 80%;
   height: 100vh;
+  background-color: #005AA4;
   /* z-index: -3; */
 }
 
 .carousel-container {
   position: relative;
   left: 20%;
+}
+.carousel-caption {
+  
+}
+
+.first-caption {
+  /* border: 2px solid red; */
+  background-color: rgba(0, 90, 164, 0.61);
+  border-radius: 5em;
+  page-break-after: 2em;
+  color: #FCFCD4;
+  bottom: 86%;
+  left: 40%;
+  /* position: relative; */
+  /* width: 20%; */
+}
+/* #first-caption {
+  animation: myanimation 30s;
+  animation-iteration-count: infinite;
+
+} */
+
+.second-caption {
+  /* border: 2px solid green; */
+  background-color: rgba(0, 90, 164, 0.61);
+  border-radius: 5em;
+  page-break-after: 2em;
+  color: #FCFCD4;
+  bottom: 25%;
+
 }
 
 .carousel-container img {
@@ -107,6 +146,10 @@ justify-content: center;
   opacity: .8;
   /* filter: blur(.5px); */
  } 
+ 
+ .carousel-indicators li {
+   background-color: #00CBFF;
+ }
 
 .carousel-inner .active {
   width: 100vw;
@@ -119,34 +162,55 @@ justify-content: center;
 }
 
 .about {
-  border: 2px solid black;
-  margin: 2em;
+  border-top: 3px solid white;
+  /* black for light mode white for dark mode */
+  color: #FCFCD4;
+  font-family: "Inria Serif";
+  font-size: 1.3em;
+  /* margin: 2em; */
   padding: .5em;
-  background-color: rgba(205, 134, 63, 0.384);
+  background-color: #005AA4;
 }
+
+.about-container {
+  /* border: 2px solid WHITE; */
+  padding: .5em;
+}
+.about-container p {
+  font-size: 1.3em;
+ 
+}
+.about-container h5 {
+  padding-bottom: 2em;
+  text-align: center;
+}
+.languages {
+  /* border: 2px solid white; */
+  margin: 1em 0;
+  padding: .5em ;
+  flex:1;
+}
+
 .languages-container {
   /* border: 2px solid green; */
+  padding: 2em 4em;
   display: flex; 
+  
   height: fit-content;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
+  text-align: center;
   
 }
 
 .language-logo-container {
   text-align: center;
-  padding-right: 5em;
-  padding-left: 5em;
+  padding-right: 4em;
+  padding-left: 4em;
   font-weight: 500;
+  font-size: 1em;
 }
 
-.about{
-  /* black for light mode white for dark mode */
-  color: black;
-  font-family: "Inria Serif";
-  font-size: 1.3em;
-
-}
 
 .project {
   /* border: 2px solid red; */
@@ -178,6 +242,16 @@ justify-content: center;
   z-index: 1;
 }
 
+footer {
+  text-align: center;
+  background-color: #005AA4;
+  color: #FCFCD4;
+  width: 100%;
+  padding-top: 1em;
+  height: 5em;
+  /* padding-left: 2em; */
+  /* border-left: 5px solid black; */
+}
 
 @media (max-width: 1300px) {
   .main-container {
@@ -197,9 +271,12 @@ justify-content: center;
     /* flex-direction: column; */
     /* justify-content: flex-start; */
     /* align-content: center; */
+    border: none;
     margin: 0;
     width: 100%;
     height: 100vh;
+    /* border-right: 1px solid red; */
+
   }
   .profile-pic-container {
     /* border: 2px solid purple; */
@@ -213,9 +290,13 @@ justify-content: center;
     width: 100vw;
     position: relative;
     left: 0%;
+    border-top: 3px solid white;
+  }
+  .languages-container {
+    padding: 1em 3em;
   }
   .language-logo-container {
-    padding:1em;
+    padding:.6em;
   }
 
   .about {
@@ -242,13 +323,41 @@ justify-content: center;
   .tech-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     padding: 0;
     /* margin: 0 auto; */
+  }
+
+  .tech { 
+    padding: 1em;
   }
   .socialmedia-links-container {
     flex-direction: row;
     margin: 1em 0;
   }
+}
+
+@keyframes myanimation
+{
+    0% {
+        left: 0%;
+        bottom: 86%;
+    }
+    25% {
+        left: 80%;
+        bottom: 80%;
+    }
+    50% {
+        left: 0%;
+        bottom: 80%;
+    }
+    75% {
+      left: 80%;
+      bottom: 86%;
+    }
+    100% {
+      left: 0%;
+      bottom: 86%;
+    }
 }
