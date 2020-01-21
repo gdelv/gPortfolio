@@ -33,7 +33,7 @@ const CarouselPage = () => {
               text: "Hello there! :waving_hand:"
             })}</h3>
             <p>Check out my CV!</p>
-            <form action = "https://docdro.id/D37HPv2" target='_blank'>
+            <form action = "https://www.docdroid.net/D37HPv2/giusseppe-resume.pdf" target='_blank'>
               <button type="submit" className='carousel-buttons'>View CV</button>
             </form>
             
